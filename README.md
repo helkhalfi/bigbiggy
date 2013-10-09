@@ -1,4 +1,4 @@
 bigbiggy
 ========
 
-a java project that uses storm with cassandra and elasticseach
+A java project that uses storm with cassandra and elasticseach

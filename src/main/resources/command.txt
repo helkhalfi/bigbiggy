@@ -1,0 +1,11 @@
+mvn clean compile assembly:single
+
+
+conf/storm.yaml
+bin/storm supervisor
+bin/storm nimbus
+bin/storm ui
+bin/storm jar bigbiggy-0.0.1-SNAPSHOT-jar-with-dependencies.jar com.mcba.processing.storm.TwitterTopology TwitterTopologyMCBA
+
+conf/zoo.conf
+bin/skServer.sh start

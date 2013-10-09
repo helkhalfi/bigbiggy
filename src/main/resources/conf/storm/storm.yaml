@@ -1,0 +1,40 @@
+########### These MUST be filled in for a storm configuration
+ storm.zookeeper.servers:
+     - "localhost"
+#     - "server2"
+
+ nimbus.host: "maison-PC"
+
+## storm.local.dir: "/usr/storm/storm-0.9.0-wip21/work"
+
+ 
+###### These may optionally be filled in:
+    
+## List of custom serializations
+# topology.kryo.register:
+#     - org.mycompany.MyType
+#     - org.mycompany.MyType2: org.mycompany.MyType2Serializer
+
+## List of custom kryo decorators
+# topology.kryo.decorators:
+#     - org.mycompany.MyDecorator
+
+## Locations of the drpc servers
+# drpc.servers:
+#     - "server1"
+#     - "server2"
+
+## Metrics Consumers
+# topology.metrics.consumers.register:
+#    - class: "org.mycompany.MyMetricsConsumer"
+#      argument: 
+#         - endpoint: "metrics-collector.mycompany.org"
+#      parallelism.hint: 1
+
+##Netty settings
+ storm.messaging.transport: "backtype.storm.messaging.netty.Context"
+ #(buffersize in bytes, here is 200MByte)
+ storm.messaging.netty.buffer_size: 209715200 
+ storm.messaging.netty.max_retries: 10
+ storm.messaging.netty.min_wait_ms: 5000
+ storm.messaging.netty.max_wait_ms: 10000
