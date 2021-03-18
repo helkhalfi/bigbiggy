@@ -14,7 +14,7 @@
         <datastax.cassandra.driver.version>2.0.0-beta1</datastax.cassandra.driver.version>
         <storm.version>0.9.0-rc2</storm.version>
         <jsoup.version>1.7.2</jsoup.version>
-        <elasticsearch.version>0.90.5</elasticsearch.version>
+        <elasticsearch.version>6.8.13</elasticsearch.version>
     </properties>
     <developers>
 		<developer>
